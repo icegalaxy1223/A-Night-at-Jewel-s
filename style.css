@@ -1,0 +1,140 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: OCRAM;
+}
+p {
+    color: white;
+    font-size: 18px;
+}
+#startScreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#startButton {
+    position: absolute;
+    left: 25%;
+    bottom: 310px;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    p:hover {
+    color: rgba(255, 255, 255, 0.2);
+}
+}
+#background {
+  height: 100vh;        /* fill the entire viewport height */
+  overflow: hidden;     /* hide the rest of the long image */
+  position: relative;
+  
+}
+#office {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.00000005s linear; /* smooth movement */
+}
+#underDesk {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#cameraView {
+    height:100vh;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#staticOverlay {
+    height:100vh;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+}
+#staticOverlayStart {
+    height:100vh;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+}
+#caughtScreen {
+    height:100vh;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#underDeskButton {
+    position: relative;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+#getOutDeskButton {
+    position: relative;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+#cameraButton {
+    position: relative;
+    left:120px;
+    width:160px;
+    height:30px;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    
+}
+#closeCameraButton {
+    position: absolute;
+    left: 120px;
+    width:160px;
+    height:30px;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    
+}
+
+#cameraButton:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+#underDeskButton:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+#getOutDeskButton:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+#closeCameraButton:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
