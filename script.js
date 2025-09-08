@@ -39,7 +39,7 @@ caughtScreen.style.visibility = "hidden";
 function gameState(){
     startButton.addEventListener("click", function() {
         isGameActive = true;
-        //run game for 2 minutes
+        //run game for 5 minutes
         ambienceSound.play();
         buzzSound.play();
         setTimeout(() => {
@@ -58,7 +58,7 @@ function gameState(){
         staticOverlayStart.style.visibility = "visible";
         cameraView.style.visibility = "hidden";
         caughtScreen.style.visibility = "hidden";
-         }, 120000);
+         }, 300000);
          gameState();
         setTimeout(() => {
             donEventHandler();
@@ -324,7 +324,7 @@ function donState() {
             }
             if (isDonKnocking && isUnderDesk === true) {
                 teleportSound.play();
-                underDesk.src = "assets/Under desk With Don.png";
+                underDesk.src = "assets/Under Desk With Don.png";
             }
         }, 5000);
         getOutDeskButton.onclick = function() {
@@ -373,5 +373,6 @@ function donState() {
 }
 
 gameState();
+
 
 
